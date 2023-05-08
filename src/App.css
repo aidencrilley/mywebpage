@@ -4,16 +4,17 @@
 
 body {
     margin: 0;
+    background-color: darkslategray;
 }
 
 .nav {
-  background-color: lightskyblue;
+  background-color: black;
   color: black; 
   text-align: center;
   padding: 1px;
 }
 
-.nav li {
+.nav div {
   display: inline-block;
   text-align: center;
   padding: 15px;
@@ -23,6 +24,17 @@ body {
 .nav a {
   text-decoration: none;
   color: inherit;
+}
+
+.nav button {
+  color: white;
+  background-color: transparent;
+  border: transparent;
+}
+
+.nav button:hover {
+  color: black;
+  background-color: skyblue;
 }
 
 h1 {
@@ -40,6 +52,7 @@ h1 {
 #whoami {
   margin-left: auto;
   margin-right: auto;
+  color: white;
   font-size: 18px;
 }
 

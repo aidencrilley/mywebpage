@@ -1,11 +1,28 @@
+import {Routes, Route, useNavigate} from 'react-router-dom';
+
 function Navbar() {
+
+    const navigate = useNavigate();
+
+    const navToHome = () => {
+        navigate('/home');
+    }
+
+    const navToAbout = () => {
+        navigate('/about');
+    }
+
+    const navToLogin = () => {
+        navigate('/login');
+    }
+
     return (
         <nav className="nav">
-            <ul>
-                <li><a href="/home">HOME</a></li>
-                <li><a href="/about">ABOUT</a></li>
-                <li><a href="/login">LOGIN</a></li>
-            </ul>
+            <div>
+                <button onClick={navToHome}>HOME</button>
+                <button onClick={navToAbout}>ABOUT</button>
+                <button onClick={navToLogin}>LOGIN</button>    
+            </div>
         </nav>
     )
 }
